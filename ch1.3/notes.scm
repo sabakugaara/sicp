@@ -1,7 +1,9 @@
 ;;; # High Order
 ;;; [cube](cube) 过程的定义，使得 (cube 2) 相比直接使用 (* 2 2 2) 更加简便，可读性更强
-(define (cube x)
-  (* x x x))
+
+;;; ```scheme
+;;;   (define (cube x)
+;;;   (* x x x))
 
 
 ;;; ## 1.3.1 Procedures as Arguments
@@ -51,3 +53,4 @@
 
 (define (sum-integers a b)
   (sum identity a inc b))
+
