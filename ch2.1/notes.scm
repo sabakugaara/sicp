@@ -8,6 +8,12 @@
 (define (numer x) (car x))
 (define (denom x) (cdr x))
 
+
+(define (add-rat x y))
+  (make-rat (+ (*(numer x) (denom y))
+                (* (number y) (denom x)))
+              (* (denom x) (denom y)))
+
 ;;; number 返回有理数的分子, denom 返回有理数分母部分
 ;;; 尝试打印一个有理数，如下所示
 
